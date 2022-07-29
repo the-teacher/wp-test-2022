@@ -1,5 +1,5 @@
 export const helloWorld = () => {
-  connsole.log('Hello World!')
+  console.log('Hello World!')
   return true
 }
 
