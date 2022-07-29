@@ -6,14 +6,20 @@ module.exports = {
   output: {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, './dest'),
-    publicPath: 'dest/'
+    publicPath: './dest'
   },
   mode: 'none',
   module: {
     rules: [
       {
+        // does not work properly with image paths in css
+        // background: url(ABS path)
         test: /\.(png|jpg)$/,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator : {
+          publicPath: './',
+          filename : '[name]-[hash][ext][query]'
+        }
       },
       {
         test: /\.css$/,
