@@ -1,1 +1,2 @@
 $ yarn add webpack webpack-cli
+$ yarn add style-loader css-loader
