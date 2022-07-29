@@ -1,5 +1,7 @@
 $ yarn add webpack webpack-cli
 $ yarn add style-loader css-loader
 $ yarn add html-webpack-plugin
+$ yarn add file-loader
+$ yarn add mini-css-extract-plugin
 
 SEE options: https://github.com/jantimon/html-webpack-plugin

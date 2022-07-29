@@ -2,10 +2,7 @@
   border: 3px solid red;
 }
 
-#root::after {
-  display: block;
-  content: '';
-  width: 100px;
-  height: 100px;
+body {
   background: url(../images/goldmedal.png);
+  background-size: 100%;
 }
