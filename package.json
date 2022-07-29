@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "yarn cleanup & webpack",
-    "cleanup": "rm -rf ./dest/*"
+    "cleanup": "rm -rf ./dest/*",
+    "open": "open ./dest/index.html"
   },
   "dependencies": {
     "css-loader": "^6.7.1",
